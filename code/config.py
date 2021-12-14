@@ -3,7 +3,7 @@ import torch as th
 import numpy as np
 import torch.nn.functional as F
 args = Namespace(
-    raw_data_path = "./dataset/ci4000213_si_001.xlsx",
+    raw_data_path = "./dataset/ci4000213_si_001.xlsx", # replace your raw dataset path
     train_sheet_name = "Train+Test",
     valid_sheet_name = "External validation",
     device = 'cuda' if th.cuda.is_available() else 'cpu',
